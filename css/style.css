@@ -67,34 +67,29 @@ fonts
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 75em) {
-  html {
-    font-size: 52.25% !important;
-  }
-  .header {
-    height: 80vh !important;
-  }
-  .menu {
-    height: 80vh !important;
-  }
-  /* .testomnials {
-    height: 40vh !important;
-  }
-  .team {
-    height: 40vh !important;
-  } */
-  /* .footer {
-    height: 50vh !important;
-  } */
-}
-@media only screen and (max-width: 56.25em) {
-  html {
-    font-size: 40% !important;
-  }
-}
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
+  }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 52.25% !important;
+    }
+  }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 40% !important;
+    }
+    /* .header {
+      height: 80vh !important;
+    }
+    .about {
+      height: initial !important;
+    } */
+
+    .menu {
+      height: 80vh !important;
+    }
   }
 }
 @media only screen and (max-width: 31.25em) {
@@ -111,7 +106,7 @@ html {
     height: 70vh !important;
   }
   .testomnials {
-    height: 60vh !important;
+    height: 50vh !important;
   }
   .team {
     height: 60vh !important;
@@ -140,10 +135,46 @@ img {
   align-items: center;
 }
 /* header */
+
+@media only screen and (max-width: 56.25em) {
+  .option {
+    grid-column-gap: 8rem;
+  }
+  .cards {
+    margin-left: -3rem !important;
+  }
+  .card {
+    height: max-content !important;
+  }
+  .chef {
+    margin-left: 6rem !important;
+  }
+  .chef img {
+    min-width: 90%;
+  }
+  .chef .user {
+    padding: 0.8rem 4rem !important;
+  }
+  .footer .details {
+    margin-right: 0 !important;
+    margin-top: 17rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .chefs .chef .user {
+    padding: 0.8rem 2.5rem !important;
+  }
+  .container .text {
+    margin-left: 1.5rem;
+  }
+  .container .about-img {
+    margin-right: 1.5rem;
+  }
+}
 .header {
   padding: 1.2rem 0;
   height: 100vh;
-  background-image: url('../img/home-bg.jpg');
+  background-image: url('../img/about-img.jpg');
   background-size: cover;
   position: relative;
 }
@@ -345,30 +376,7 @@ img {
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
 }
-@media only screen and (max-width: 56.25em) {
-  .option {
-    grid-column-gap: 8rem;
-  }
-  .cards {
-    margin-left: -3rem !important;
-  }
-  .card {
-    height: max-content !important;
-  }
-  .chef {
-    margin-left: 6rem !important;
-  }
-  .chef img {
-    min-width: 90%;
-  }
-  .chef .user {
-    padding: 0.8rem 4rem !important;
-  }
-  .footer .details {
-    margin-right: 0 !important;
-    margin-top: 17rem;
-  }
-}
+
 .option .meal {
   display: flex;
   justify-content: center;
