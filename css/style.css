@@ -143,7 +143,7 @@ img {
 .header {
   padding: 1.2rem 0;
   height: 100vh;
-  background-image: url('/img/home-bg.jpg');
+  background-image: url('img/home-bg.jpg');
   background-size: cover;
   position: relative;
 }
@@ -493,7 +493,7 @@ img {
 
 .footer {
   height: 55vh;
-  background-image: url('/img/footer-bg.jpg');
+  background-image: url('img/footer-bg.jpg');
   background-size: cover;
   position: relative;
   display: flex;
